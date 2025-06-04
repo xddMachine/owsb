@@ -17,6 +17,7 @@ OWSB (Order-Workflow-Supply-Business) is an enterprise-grade Purchase Order Mana
 - **Financial Controls** - Approval workflows and payment processing
 - **Audit Trail** - Complete transaction history and reporting
 - **Data Persistence** - CSV-based storage for easy data management
+- **Modern UI** - Consistent fonts, colors and button styling
 
 ## Quick Start
 
@@ -32,6 +33,10 @@ cd OWSB
 
 # Start the application (recommended method)
 ./start-owsb.sh
+
+# Running on a headless server
+If `$DISPLAY` is not set, the startup scripts will try to use
+`xvfb-run` automatically. Install the `xvfb` package first.
 
 # Alternative: Using Ant directly
 ant clean compile run
