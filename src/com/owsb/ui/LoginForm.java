@@ -3,6 +3,8 @@ package com.owsb.ui;
 import com.owsb.domain.User;
 import com.owsb.service.AuthService;
 import com.owsb.util.FileUtils;
+import com.owsb.util.UIPermissionUtils;
+import com.owsb.util.UIUtils;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -27,40 +29,46 @@ public class LoginForm extends JFrame {
         setResizable(false);
         
         JPanel mainPanel = new JPanel(new GridBagLayout());
+        mainPanel.setBackground(UIUtils.BACKGROUND_COLOR);
         GridBagConstraints gbc = new GridBagConstraints();
         
         JLabel titleLabel = new JLabel("Purchase Order Management System");
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 18));
-        titleLabel.setForeground(new Color(0, 102, 204));
+        titleLabel.setFont(UIUtils.DEFAULT_FONT.deriveFont(Font.BOLD, 18f));
+        titleLabel.setForeground(UIUtils.PRIMARY_COLOR);
         gbc.gridx = 0; gbc.gridy = 0; gbc.gridwidth = 2;
         gbc.insets = new Insets(20, 20, 30, 20);
         mainPanel.add(titleLabel, gbc);
         
         JLabel usernameLabel = new JLabel("Username:");
+        usernameLabel.setFont(UIUtils.DEFAULT_FONT);
         gbc.gridx = 0; gbc.gridy = 1; gbc.gridwidth = 1;
         gbc.insets = new Insets(10, 20, 5, 10);
         gbc.anchor = GridBagConstraints.EAST;
         mainPanel.add(usernameLabel, gbc);
         
         usernameField = new JTextField(15);
+        usernameField.setFont(UIUtils.DEFAULT_FONT);
         gbc.gridx = 1; gbc.gridy = 1;
         gbc.insets = new Insets(10, 10, 5, 20);
         gbc.anchor = GridBagConstraints.WEST;
         mainPanel.add(usernameField, gbc);
         
         JLabel passwordLabel = new JLabel("Password:");
+        passwordLabel.setFont(UIUtils.DEFAULT_FONT);
         gbc.gridx = 0; gbc.gridy = 2;
         gbc.insets = new Insets(5, 20, 10, 10);
         gbc.anchor = GridBagConstraints.EAST;
         mainPanel.add(passwordLabel, gbc);
         
         passwordField = new JPasswordField(15);
+        passwordField.setFont(UIUtils.DEFAULT_FONT);
         gbc.gridx = 1; gbc.gridy = 2;
         gbc.insets = new Insets(5, 10, 10, 20);
         gbc.anchor = GridBagConstraints.WEST;
         mainPanel.add(passwordField, gbc);
         
         JPanel buttonPanel = new JPanel(new FlowLayout());
+        buttonPanel.setBackground(UIUtils.BACKGROUND_COLOR);
         loginButton = new JButton("Login");
         exitButton = new JButton("Exit");
         
@@ -75,6 +83,7 @@ public class LoginForm extends JFrame {
         gbc.anchor = GridBagConstraints.CENTER;
         mainPanel.add(buttonPanel, gbc);
         
+        UIPermissionUtils.styleAllButtonsInContainer(mainPanel);
         add(mainPanel);
         
         loginButton.addActionListener(new ActionListener() {
@@ -143,7 +152,7 @@ public class LoginForm extends JFrame {
                 new FinanceManagerDashboard(user).setVisible(true);
                 break;
             default:
-                JOptionPane.showMessageDialog(this, "Unknown user role.", 
+                JOptionPane.showMessageDialog(this, "Unknown user role.",
                                             "Error", JOptionPane.ERROR_MESSAGE);
         }
     }

@@ -5,6 +5,7 @@ import com.owsb.domain.User;
 import com.owsb.service.AuthorizationService;
 import javax.swing.*;
 import java.awt.*;
+import com.owsb.util.UIUtils;
 
 /**
  * Utility class for enforcing permissions in UI components
@@ -158,13 +159,18 @@ public class UIPermissionUtils {
      * @param button The button to style
      */
     public static void applyConsistentButtonStyle(JButton button) {
-        // Set consistent colors
-        button.setBackground(Color.WHITE);
-        button.setForeground(Color.BLACK);
+        // Set consistent colors based on UIManager defaults
+        Color bg = UIManager.getColor("Button.background");
+        Color fg = UIManager.getColor("Button.foreground");
+        button.setBackground(bg != null ? bg : Color.WHITE);
+        button.setForeground(fg != null ? fg : Color.BLACK);
         
         // Set consistent border and appearance
         button.setOpaque(true);
         button.setBorderPainted(true);
+        if (button.getBorder() == null) {
+            button.setBorder(BorderFactory.createLineBorder(UIUtils.PRIMARY_COLOR.darker()));
+        }
         button.setFocusPainted(false);
         
         // Set consistent font
