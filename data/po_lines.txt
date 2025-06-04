@@ -1,0 +1,3 @@
+poId,itemId,itemCode,itemName,quantity,unit,unitPrice,specifications,receivedQuantity,status
+PO0002,I0006,MOUSE002,Wireless Mouse,20,pcs,7500.0,1,20,RECEIVED
+PO0003,I0008,DESK02,Office Desk 1,50,pcs,18000.0,1,50,RECEIVED

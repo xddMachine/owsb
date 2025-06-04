@@ -1,0 +1,2 @@
+recordId,salesDate,itemId,itemCode,itemName,quantitySold,unitPrice,totalAmount,salesPerson,customerInfo,notes
+SR0001,2025-06-03,I0008,DESK02,Office Desk 1,20,20000.0,400000.0,U0010,Walk-in Customer,

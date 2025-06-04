@@ -1,0 +1,3 @@
+poId,prId,supplierId,supplierName,orderDate,expectedDeliveryDate,createdBy,approvedBy,approvedDate,status,paymentTerms,deliveryAddress,notes
+PO0002,PR0002,S0006,General Supplies Inc 1,2025-06-03,2025-06-17,purchase,finance,2025-06-03,APPROVED,Industrial Zone,Default delivery address,Auto-created from approved PR: PR0002
+PO0003,PR0003,S0008,OfficeMax Supply Co 1,2025-06-03,2025-06-17,purchase,finance,2025-06-03,APPROVED,Business District,Default delivery address,Auto-created from approved PR: PR0003

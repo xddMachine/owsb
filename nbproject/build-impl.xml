@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OWSB-impl" default="default" basedir="..">
+    <property file="nbproject/project.properties"/>
+    
+    <fail message="Please build using Ant 1.8.0 or higher.">
+        <condition>
+            <not>
+                <antversion atleast="1.8.0"/>
+            </not>
+        </condition>
+    </fail>
+    
+    <target name="default" depends="dist"/>
+    
+    <target name="init">
+        <mkdir dir="build"/>
+        <mkdir dir="build/classes"/>
+    </target>
+    
+    <target name="compile" depends="init">
+        <javac srcdir="src" destdir="build/classes" includeantruntime="false" source="13" target="13"/>
+    </target>
+    
+    <target name="dist" depends="compile">
+        <mkdir dir="dist"/>
+        <jar destfile="dist/OWSB.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="com.owsb.Main"/>
+            </manifest>
+        </jar>
+    </target>
+    
+    <target name="run" depends="compile">
+        <java classname="com.owsb.Main" classpath="build/classes" fork="true"/>
+    </target>
+    
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="dist"/>
+    </target>
+</project>

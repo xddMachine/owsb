@@ -1,0 +1,8 @@
+userId,role,username,password,fullName,phone,email,status
+U0001,ADMIN,admin,Admin@123,John Doe,012-3456789,john@example.com,ACTIVE
+U0002,SALES_MANAGER,sales_mgr,Sales@123,Sarah Johnson,012-3456-7890,sarah.johnson@owsb.com,ACTIVE
+U0005,FINANCE_MANAGER,finance_mgr,Finance@123,David Thompson,012-3456-7893,david.thompson@owsb.com,ACTIVE
+U0010,SALES_MANAGER,sales,1234Qwer,user123,012-3456-7890,sarah.johnson@owsb.com,ACTIVE
+U0011,PURCHASE_MANAGER,purchase,1234Qwer,user,012-3456-7890,sarah.johnson@owsb.com,ACTIVE
+U0012,FINANCE_MANAGER,finance,1234Qwer,user,012-3456-7890,sarah.johnson@owsb.com,ACTIVE
+U0013,INVENTORY_MANAGER,inventory,1234Qwer,user,012-3456-7890,sarah.johnson@owsb.com,ACTIVE

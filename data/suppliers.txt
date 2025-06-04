@@ -1,0 +1,10 @@
+supplierId,supplierCode,supplierName,contactPerson,phone,email,address,paymentTerms,status
+S0001,TECH001,TechWorld Solutions,Alice Wang,011-2233-4455,alice@techworld.com,123 Tech Street, Tech City,Net 30,ACTIVE
+S0002,OFFICE001,OfficeMax Supply Co,Bob Smith,011-2233-4456,bob@officemax.com,456 Office Avenue, Business District,Net 15,ACTIVE
+S0003,FURN001,Furniture Plus Ltd,Carol Brown,011-2233-4457,carol@furnitureplus.com,789 Furniture Row, Design Quarter,Net 45,ACTIVE
+S0004,ELEC001,Electronics Direct,Daniel Lee,011-2233-4458,daniel@electronicsdirect.com,321 Electronics Blvd, Innovation Hub,Net 30,ACTIVE
+S0005,SUPPLY001,General Supplies Inc,Emma Davis,011-2233-4459,emma@generalsupplies.com,654 Supply Chain Drive, Industrial Zone,Net 30,ACTIVE
+S0006,SUPPLY02,General Supplies Inc 1,Emma Davis 1,011-2233-4459,emma@generalsupplies.com,654 Supply Chain Drive,Industrial Zone,ACTIVE
+S0007,SUPPLY03,General Supplies Inc 12,Emma Davis 12,011-2233-4459,emma@generalsupplies.com,654 Supply Chain Drive,Industrial Zone,ACTIVE
+S0008,OFFICE02,OfficeMax Supply Co 1,Bob Smith 1,011-2233-4456,bob@officemax.com,456 Office Avenue,Business District,ACTIVE
+S0009,OFFICE03,OfficeMax Supply Co 2,Bob Smith 12,011-2233-4456,bob@officemax.com,456 Office Avenue,Business District,ACTIVE

@@ -1,0 +1,10 @@
+itemId,itemCode,itemName,description,category,unitPrice,stockQuantity,reorderLevel,status
+I0001,LAPTOP001,Dell Laptop,Dell Inspiron 15 3000,Electronics,45000.0,25,5,ACTIVE
+I0002,MOUSE001,Wireless Mouse,Logitech MX Master 3,Electronics,8500.0,50,10,ACTIVE
+I0003,DESK001,Office Desk,Standing Desk Adjustable,Furniture,25000.0,15,3,ACTIVE
+I0004,CHAIR001,Office Chair,Ergonomic Office Chair,Furniture,18000.0,20,5,ACTIVE
+I0005,PAPER001,Copy Paper,A4 Copy Paper 500 sheets,Office Supplies,250.0,200,50,ACTIVE
+I0006,MOUSE002,Wireless Mouse,Logitech MX Master 3,Electronics,8000.0,30,20,ACTIVE
+I0007,MOUSE003,Wireless Mouse,Logitech MX Master 3,Electronics,8000.0,200,30,ACTIVE
+I0008,DESK02,Office Desk 1,Standing Desk Adjustable,Furniture,20000.0,40,20,ACTIVE
+I0009,DESK03,Office Desk 1,Standing Desk Adjustable,Furniture,22000.0,100,10,ACTIVE

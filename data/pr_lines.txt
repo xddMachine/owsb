@@ -1,0 +1,4 @@
+prId,itemId,itemCode,itemName,quantity,unit,estimatedPrice,specifications
+PR0001,I0006,MOUSE002,Wireless Mouse,50,pcs,7500.0,1
+PR0002,I0006,MOUSE002,Wireless Mouse,20,pcs,7500.0,1
+PR0003,I0008,DESK02,Office Desk 1,50,pcs,18000.0,1
